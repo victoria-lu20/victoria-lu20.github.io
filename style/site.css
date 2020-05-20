@@ -8,8 +8,25 @@ body{
     font-size:20px;
 }
 
+.spacer{
+    height:50px;
+}
+
+
 .center{
     text-align:center;
+}
+
+.royal_blue{
+    color:#1365ff;
+}
+
+.gold{
+    color:#ff9c8a;
+}
+
+.green{
+    color:#a0da84;
 }
 
 .content{
@@ -75,6 +92,7 @@ em{
     padding-left:50px;
     text-align:center;
 }
+
 
 .basics{
     display:flex;
@@ -193,6 +211,7 @@ h2{
 .descrip{
     padding-left:100px;
     font-size:20px;
+    width:60%;
 }
 
 .color_pink{
