@@ -75,6 +75,7 @@
     </div>
   </div>
 
+
 <!-- design journey -->
 <div class = "sections">
   <div class = "section_line">
@@ -85,6 +86,135 @@
   </div>
 </div>
 
+<div class = "article">
+  <div class = "content_text">
+    <h3 class = "blurb1">
+      Design Process
+    </h3>
+    <p class = "content">
+      Some of the user needs that were outlined for this project:
+    </p>
+    <ul class = "content">
+      <li>viewing tags and images</li>
+      <li>removing, adding tags from/to images</li>
+      <li>deleting images</li>
+      <li>uploading images</li>
+    </ul>
+    <p class = "content">For the website, I divided the content into 3 categories, for 3 separate pages on the website:</p>
+    <p class = "content bold">1. Gallery Page</p>
+    <p class = "content">Each image is displayed in an organized grid manner; when users click on the image, they can see all the additional details (including all the tags that correspond to the image). Under each image, the user has the option to: edit tags, delete the image, and add new tags. </p>
+    <p class = "content bold">2. Tags Page</p>
+    <p class = "content">There is a comprehensive list of tags on this page; when users click on a tag, all the corresponding images to that specific tag show up. Users can filter the images by tag via the “search by tag” form near the top of the page. </p>
+    <p class = "content bold">3. Uploads Page</p>
+    <p class = "content">This page includes a form that enables users to upload a specific picture, with instructions on the top regarding how to upload. The user can input information, such as name, location, and description of the food as well as the tags that the user finds appropriate (note: user can add existing tags or new tags).  </p>
+    <p class = "content">I have included some of the sketches for my design below:</p>
+  </div>
+</div>
+
+    <!--images of the sketches-->
+    <div class = "outer_display">
+      <div class = "display">
+        <img src = "design/foodgallery/imgdetail.jpg" alt = "general overview sketch">
+        <div class = "toverlay"></div>
+        <div class = "tcaption">
+          <p>gallery</p>
+        </div>
+      </div>
+      <div class = "display">
+        <img src = "design/foodgallery/searchtag.jpg" alt = "searching sketch">
+        <div class = "toverlay"></div>
+        <div class = "tcaption">
+          <p>searching for a tag</p>
+        </div>
+      </div>
+      <div class = "display">
+        <img src = "design/foodgallery/uploadimg.jpg" alt = "uploads sketch">
+        <div class = "toverlay"></div>
+        <div class = "tcaption">
+          <p>uploading an image</p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "spacer"></div>
+
+    <div class = "article">
+      <div class = "content_text">
+        <p class = "subsection">Design Patterns</p>
+        <p class = "content">I utilized some existing design patterns to improve the usability of the site, such as:</p>
+        <ul class = "content">
+          <li>clicking on the image to display additional information</li>
+          <li>grouping together edit/delete icons </li>
+          <li>search/filter form</li>
+          <li>a separate uploads page </li>
+          <li>cohesive color scheme throughout the site</li>
+        </ul>
+      </div>
+    </div>
+
+<!-- backend planning -->
+<div class = "sections">
+  <div class = "section_line">
+    <hr>
+  </div>
+  <div class = "section_txt">
+    <p class = "section color_pink">backend planning</p>
+  </div>
+</div>
+
+<div class = "article">
+  <div class = "content_text">
+    <h3 class = "blurb1">Programming Behind the Design</h3>
+        <p class = "subsection">Planning Requests</p>
+        <p class = "content">After designing the general flow for the site, I planned out some request forms that will support my site and design: </p>
+        <ul class = "content">
+          <li>GET request form(s): viewing image details, viewing image gallery, search by tag</li>
+          <li>POST request form(s): adding/removing tags, deleting image, uploading an image</li>
+        </ul> 
+        <p class = "subsection">Database Schema Design (SQL)</p>
+        <p class = "content">Since this is an image gallery, a database that connects images and tags is essential. I planned out three database tables: foods table, tags table, and food tags table. The food tags table is a foreign key(s) table that documents both ids for the foods and the tags table(s) to better organize and display the content; left outer join and inner join clauses can be utilized to find information pertaining to specific image ids that correspond to specific tag ids (and vice versa). </p>
+        <p class = "subsection">Database Query Planning (SQL)</p>
+        <p class = "content">In order to display and modify the information for the image gallery, database queries are utilized. Some examples of instances where queries need to be used include:</p>
+        <p class = "content">1. viewing image details</p>
+        <ul class = "content">
+          <li>Retrieve name, location and description from the foods table</li>
+          <li>Find the corresponding tags id for a specific image id via the food_tags table</li>
+          <li>Retrieve the tags names that correspond to the tags id found</li>
+        </ul>
+        <p class = "content">2. removing an image</p>
+        <ul class = "content">
+          <li>Delete the corresponding information from foods, food_tags, and tags tables (when necessary and appropriate)</li>
+        </ul>
+        <p class = "subsection">PHP Partial Planning</p>
+        <p class = "content">In order to code more efficiently, I used PHP partials on my website, for elements such as:</p>
+        <ul class = "content">
+          <li>the header</li>
+          <li>the navigation bar</li>
+          <li>the footer</li>
+        </ul>
+      </div>
+    </div>
+
+<!-- puttint it all together -->
+<div class = "sections">
+  <div class = "section_line">
+    <hr>
+  </div>
+  <div class = "section_txt">
+    <p class = "section color_pink">putting it all together</p>
+  </div>
+</div>
+
+<div class = "article">
+  <div class = "content_text">
+        <h3 class = "blurb1">Final Website</h3>
+        <p class = "content">Having put the designs and back-end programming together, I came up with a final website. </p>
+      </div>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ygr0rOIBDBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    
     <!--footer-->
     <div class = "footer">
       <p class = "center">©️ 2020 designed by victoria ✨</p>
