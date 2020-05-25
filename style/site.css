@@ -179,7 +179,7 @@ a:hover{
 
 nav{
     padding:20px;
-    margin-left:750px;
+    margin-left:700px;
     padding-top:75px;
 }
 
@@ -584,4 +584,15 @@ video{
     width:650px;
     margin-right:100px;
     padding-left:50px;
+}
+
+/*footer nav*/
+.footer nav{
+    margin-left:0px;
+    text-align:center;
+    padding-bottom:10px;
+}
+
+.footer nav li{
+    font-size:16px;
 }
