@@ -1,11 +1,17 @@
 /* general */
 body{
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    scroll-behavior:smooth;
 }
+
 
 .h4{
     font-weight:bold;
     font-size:20px;
+}
+
+.underline{
+    text-decoration:underline;
 }
 
 .spacer{
@@ -27,6 +33,10 @@ body{
 
 .green{
     color:#a0da84;
+}
+
+.red{
+    color:rgb(255, 94, 94);
 }
 
 .content{
@@ -266,11 +276,11 @@ h2{
     bottom:0;
     left:0;
     right:0;
-    background-color:#7aafff;
+    background-color:black;
   }
   
   .adisplay:hover .aoverlay{
-    opacity: 0.9;
+    opacity: 0.5;
     transition: .5s ease;
   }
 
@@ -377,82 +387,6 @@ h2{
 
   /*art project names*/
 
-  /*layout for design project gallery*/
-  .douter_display{
-    display:flex;
-    flex-wrap:wrap;
-    padding-top:50px;
-    justify-content:left;
-    margin-left:100px;
-}
-
-.ddisplay{
-    widows: 350px;
-    height:350px;
-    flex: 0 0 33.333333%;
-    position:relative;
-}
-
-.ddisplay img{
-    width:350px;
-    height:350px;
-    object-fit:cover;
-    position:relative;
-}
-
-.doverlay {
-    position: absolute;
-    width: 350px;
-    height:350px;
-    opacity: 0;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color:#fcb4b4;
-  }
-  
-  .ddisplay:hover .doverlay{
-    opacity: 0.9;
-    transition: .5s ease;
-  }
-
-  .ddisplay:hover{
-      transform:scale(1.02,1.02);
-      transition: 0.5s ease;
-  }
-  
-  .dtext_descrip {
-    color: white;
-    opacity:0;
-    position: absolute;
-    text-align:center;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    width: 350px;
-    height:350px;
-    padding-top:100px;
-  }
-
-  .ddisplay:hover .dtext_descrip{
-      opacity:1.0;
-  }
-
-  .dtext_descrip h4{
-      width:250px;
-      font-size:24px;
-      font-weight:normal;
-      margin-left:50px;
-  }
-
-  .dtext_descrip p{
-    width:250px;
-    font-size:16px;
-    font-weight:normal;
-    margin-left:50px;
-}
 
 /*design projects*/
 .article{
@@ -606,3 +540,48 @@ video{
      height:400px;
     margin-left:27%;
   }
+
+.point{
+    text-align:center;
+    height:100px;
+    width:100px;
+    margin-left:46%;
+}
+
+.point a{
+    font-size:30px;
+}
+
+.point:hover{
+    transform:scale(1.1,1.1);
+    transition: 0.5s ease;
+}
+
+/*about page*/
+.about{
+    display:flex;
+    flex-direction:row;
+}
+
+.about_img div{
+    width:300px;
+    height:300px;
+}
+
+.about_img img {
+    width:300px;
+    height:300px;
+    padding-left:100px;
+    padding-top:50px;
+}
+
+
+.about_text {
+    padding-top:25px;
+}
+
+.about_text p{
+    width:650px;
+    margin-right:100px;
+    padding-left:50px;
+}
