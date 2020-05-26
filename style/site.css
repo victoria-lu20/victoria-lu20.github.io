@@ -662,4 +662,48 @@ video{
   }
 
   /*mobile*/
+  @media (max-width: 600px){
+    .featured{
+        flex-direction:column;
+        margin-left:5%;
+    }
 
+    .header{
+        flex-direction:column;
+    }
+
+    .header nav{
+        margin-left:0px;
+        margin-top:0px;
+        padding-top:0px;
+    }
+
+    .point{
+        margin-left:40%;
+    }
+
+    .aouter_display{
+        flex-direction:column;
+        margin-left:5%;
+    }
+
+    .adisplay{
+        padding-bottom:20px;
+    }
+
+    .about{
+        flex-direction:column;
+    }
+
+    .about p{
+        width:75%;
+    }
+
+ 
+
+    .content p{
+        width:50%;
+    }
+
+
+  }
