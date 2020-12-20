@@ -146,7 +146,7 @@ em{
 /*footer*/
 .footer {
     font-size:16px;
-    padding-top:100px;
+    padding-top:50px;
 }
 
 /* header */
@@ -165,7 +165,7 @@ h1{
     font-weight:normal;
     padding-left:100px;
     padding-top:25px;
-} 
+}
 
 
 a{
@@ -236,6 +236,10 @@ h2{
     color:#7aafff;
 }
 
+.linkedin_color{
+    color: #0E76A8;
+}
+
 .plink{
     text-decoration:underline;
 }
@@ -254,7 +258,7 @@ h2{
 }
 
 .adisplay{
-    widows: 350px;
+    width: 350px;
     height:350px;
     flex: 0 0 33.333333%;
     position:relative;
@@ -278,7 +282,7 @@ h2{
     right:0;
     background-color:black;
   }
-  
+
   .adisplay:hover .aoverlay{
     opacity: 0.5;
     transition: .5s ease;
@@ -288,7 +292,7 @@ h2{
       transform:scale(1.02,1.02);
       transition: 0.5s ease;
   }
-  
+
   .atext_descrip {
     color: white;
     opacity:0;
@@ -331,7 +335,7 @@ h2{
 }
 
 .inner{
-    widows: 500px;
+    width: 500px;
     height:500px;
     flex: 0 0 33.333333%;
     margin-top:75px;
@@ -482,7 +486,7 @@ video{
 }
 
 .display{
-    widows: 350px;
+    width: 350px;
     height:350px;
     flex: 0 0 33.333333%;
     position:relative;
@@ -572,7 +576,7 @@ video{
     width:300px;
     height:300px;
     padding-left:100px;
-    padding-top:50px;
+    padding-top:75px;
 }
 
 
@@ -596,7 +600,7 @@ video{
 .footer nav li{
     font-size:12px;
 }
-    
+
 /*featured*/
 .featured{
     display:flex;
@@ -607,23 +611,23 @@ video{
 }
 
 .featured_display{
-    widows: 350px;
-    height:350px;
+    width: 300px;
+    height:300px;
     flex: 0 0 33.333333%;
     position:relative;
 }
 
 .featured_display img{
-    width:350px;
-    height:350px;
+    width:300px;
+    height:300px;
     object-fit:cover;
     position:relative;
 }
 
 .featured_overlay {
     position: absolute;
-    width: 350px;
-    height:350px;
+    width: 300px;
+    height:300px;
     opacity: 0;
     top:0;
     bottom:0;
@@ -631,7 +635,7 @@ video{
     right:0;
     background-color:black;
   }
-  
+
   .featured_display:hover .featured_overlay{
     opacity: 0.5;
     transition: .5s ease;
@@ -641,7 +645,7 @@ video{
       transform:scale(1.02,1.02);
       transition: 0.5s ease;
   }
-  
+
   .featured_descrip {
     color: white;
     opacity:0;
@@ -651,8 +655,8 @@ video{
     bottom:0;
     left:0;
     right:0;
-    width: 350px;
-    height:350px;
+    width: 300px;
+    height:300px;
     padding-top:100px;
   }
 
@@ -703,7 +707,7 @@ video{
         width:75%;
     }
 
- 
+
 
     .content p{
         width:50%;
